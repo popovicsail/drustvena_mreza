@@ -5,7 +5,12 @@ namespace drustvena_mreza.Repositories
     public class ClanstvaRepository
     {
         private static string ClanstvaPath { get; set; } = "../../../data/clanstva.csv";
-        public static void LoadClanstva()
+
+        public ClanstvaRepository()
+        {
+            LoadClanstva();
+        }
+        public void LoadClanstva()
         {
             try
             {

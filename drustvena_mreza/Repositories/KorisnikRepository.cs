@@ -9,10 +9,7 @@ namespace drustvena_mreza.Repositories
         
         public KorisnikRepository()
         {
-            if (AllKorisnik == null)
-            {
-                LoadKorisnik();
-            }
+            LoadKorisnik();
         }
 
         private void LoadKorisnik()

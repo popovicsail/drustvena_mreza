@@ -9,10 +9,7 @@ namespace drustvena_mreza.Repositories
 
         public GrupaRepository()
         {
-            if (AllGrupa == null)
-            {
-                LoadGrupa();
-            }
+            LoadGrupa();
         }
         private void LoadGrupa()
         {
