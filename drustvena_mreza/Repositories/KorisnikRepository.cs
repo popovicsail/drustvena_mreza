@@ -48,7 +48,7 @@ namespace drustvena_mreza.Repositories
             }
         }
 
-        private void SaveKorisnik()
+        public void SaveKorisnik()
         {
             try
             {
