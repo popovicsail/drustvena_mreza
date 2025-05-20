@@ -4,7 +4,7 @@ namespace drustvena_mreza.Repositories
 {
     public class ClanstvaRepository
     {
-        private static string ClanstvaPath { get; set; } = "../../../data/clanstva.csv";
+        private static string ClanstvaPath { get; set; } = "data/clanstva.csv";
 
         public ClanstvaRepository()
         {
@@ -22,7 +22,7 @@ namespace drustvena_mreza.Repositories
                     int korisnikId = int.Parse(clanstvaLinijaAll[0]);
                     int grupaId = int.Parse(clanstvaLinijaAll[1]);
 
-                    GrupaRepository.AllGrupa[grupaId].Korisnik.Add(KorisnikRepository.AllKorisnik[korisnikId]);
+                    // GrupaRepository.AllGrupa[grupaId].Korisnik.Add(KorisnikRepository.AllKorisnik[korisnikId]);
                     KorisnikRepository.AllKorisnik[korisnikId].Grupa.Add(GrupaRepository.AllGrupa[grupaId]);
 
                 }
