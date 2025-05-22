@@ -34,7 +34,7 @@ namespace drustvena_mreza.Repositories
             }
         }
 
-        public static void SaveClanstva()
+        public void SaveClanstva()
         {
             try
             {

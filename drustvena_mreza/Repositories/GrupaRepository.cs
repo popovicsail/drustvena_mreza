@@ -45,7 +45,7 @@ namespace drustvena_mreza.Repositories
             }
         }
 
-        private void SaveGrupa()
+        public void SaveGrupa()
         {
             try
             {
